@@ -10,14 +10,17 @@ struct Node {
     }
 };
 
-void findMiddle(Node *head) {
+void findNthE(Node *head, int n) {
     if(!head) return;
-    Node *slow = head, *fast = head;
-    while(fast && (fast -> next)) {
-        slow = slow -> next;
-        fast = fast -> next -> next;
-    }
-    cout << (slow -> data);
+    Node *curr;
+    int count = 0;
+    for(curr = head; curr; curr = curr -> next)
+        ++count;
+    if(count < n) return;
+    curr = head; 
+    for(int i = 0; i < (count - n); ++i)
+        curr = curr -> next;
+    cout << curr -> data;
 }
 
 int main() {
@@ -25,6 +28,7 @@ int main() {
     head -> next = new Node(20);
     head -> next -> next = new Node(30);
     head -> next -> next -> next = new Node(40);
-    findMiddle(head);
+    head -> next -> next -> next -> next = new Node(50);
+    findNthE(head, 6);
     return 0;
 }
