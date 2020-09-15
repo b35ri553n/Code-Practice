@@ -22,3 +22,16 @@ int main() {
     return 0;
 }
 
+    void duplicateZeros(vector<int>& arr) {
+        int n = arr.size();
+        for (int i = 0; i < n + 1; ++i) {
+            if (i == n) {
+                while(arr.size() - n) arr.pop_back();
+                return;
+            }
+            if (arr[i] == 0) {
+                arr.insert(arr.begin() + i, 0);
+                ++i;
+            }
+        }
+    }

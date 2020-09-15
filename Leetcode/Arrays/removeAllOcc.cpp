@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 //Erase Remove Idiom
 int removeElement(vector<int>& nums, int val) {
     nums.erase(remove(nums.begin(), nums.end(), val), nums.end());
