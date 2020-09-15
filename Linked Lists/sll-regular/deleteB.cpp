@@ -30,8 +30,8 @@ Node *delB(Node *head) {
 
 int main(){
     Node *head = new Node(10);
-    // head -> next = new Node(20);
-    // head -> next -> next = new Node(30);
+    head -> next = new Node(20);
+    head -> next -> next = new Node(30);
     head = delB(head);
     traverseNprint(head);
     return 0;
