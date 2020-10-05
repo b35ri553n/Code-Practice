@@ -5,9 +5,8 @@ using namespace std;
 int * findSum(int arr[], int value, int size) {
     // Sorting function is prepended as sort(arr, low, high)
     for(int i = 0; i < size; i++) {
-        int to_find = value - arr[i];
         for(int j = i + 1; j < size; j++) {
-            if(arr[j] == to_find) {
+            if(arr[i] + arr[j] == value) {
                 if (!i) {
                     arr[1] = arr[j];
                     arr[0] = arr[i];
