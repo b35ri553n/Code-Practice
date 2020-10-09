@@ -24,7 +24,7 @@ int * findSum(int arr[], int value, int size) {
 }
 
 int main() {
-    int size = 5, value = 11;
+    int size = 5, value = 6;
     int arr[size] = {2, 4, 5, 7, 8};
 
     if (size > 0) {
