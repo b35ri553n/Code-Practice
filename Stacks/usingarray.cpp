@@ -50,7 +50,7 @@ int Stack::pop() {
  
 int Stack::peek(int index) {
     int x = -1;
-    if (top-index+1 < 0 || top-index+1 == size){
+    if (top-index+1 < 0 || top-index+1 >= size){
         cout << "Invalid position!" << endl;
     } else {
         x = S[top-index+1];
