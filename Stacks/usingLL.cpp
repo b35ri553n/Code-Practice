@@ -27,7 +27,7 @@ Node* push(Node *head, int x) {
     return head;
 }
 
-int pop(Node *head) {
+int pop(Node *&head) {
     if(!head) return -1;
     int res = head -> data;
     Node *temp = head;
@@ -37,13 +37,13 @@ int pop(Node *head) {
 }
 
 int main() {
-    Node *head = NULL;
+    Node *head = new Node(5);
     head = push(head, 10);
     head = push(head, 20);
     head = push(head, 30);
     display(head);
     int res = pop(head);
-    cout << endl << res;
+    cout << endl << res << endl;
     display(head);
     return 0;
 }
