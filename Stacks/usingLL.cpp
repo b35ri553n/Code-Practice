@@ -20,7 +20,7 @@ void display(Node *head) {
 
 //Since insertion and deletion happens at same end, they're done at head in case of SLL
 
-Node* push(Node *head, int x) {
+Node* push(Node *&head, int x) {
     Node *temp = new Node(x);
     temp -> next = head;
     head = temp;
