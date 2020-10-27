@@ -38,7 +38,7 @@ void pop(Node *&head) {
     // return res;
 }
 
-int *prevGreaterElement(int *arr, int size) {
+int *nextGreaterElement(int *arr, int size) {
     Node *head = new Node(arr[size - 1]);
     int *res = new int[size];
     res[size - 1] = -1;        //since there is no previous element for arr[size - 1]; 
@@ -54,7 +54,7 @@ int *prevGreaterElement(int *arr, int size) {
 int main() {
     int arr[] = {5, 15, 10, 8, 6, 12, 9, 18};
     int arr_size = sizeof(arr) / sizeof(arr[0]);
-    int *res = prevGreaterElement(arr, arr_size);
+    int *res = nextGreaterElement(arr, arr_size);
     cout << "____Result____" << endl;
     for (int i = 0; i < arr_size; i++)
         cout << arr[i] << " ---> " << res[i] << endl;
