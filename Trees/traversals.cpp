@@ -1,17 +1,22 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-struct Node {
-    int key;
-    Node *left;
-    Node *right;
-    Node(int k) {
-        key = k;
-        left = right = NULL;
-    }
+class Node {
+	public:
+		int key;
+		Node *left;
+		Node *right;
+	
+		Node(int k) {
+			key = k;
+			left = right = NULL;
+        }
+        void inorder(Node *root);
+        void preorder(Node *root);
+        void postorder(Node *root);
 };
 
-void inorder(Node *root) {
+void Node::inorder(Node *root) {
     if(root) {      //if tree is empty then we cant access its left right
         inorder(root -> left);
         cout << root -> key << " ";
@@ -19,7 +24,7 @@ void inorder(Node *root) {
     }    
 }
 
-void preorder(Node *root) {
+void Node::preorder(Node *root) {
     if(root) {      //if tree is empty then we cant access its left right
         cout << root -> key << " ";
         inorder(root -> left);
@@ -27,7 +32,7 @@ void preorder(Node *root) {
     }    
 }
 
-void postorder(Node *root) {
+void Node::postorder(Node *root) {
     if(root) {      //if tree is empty then we cant access its left right
         inorder(root -> left);
         inorder(root -> right);
@@ -40,8 +45,8 @@ int main() {
     root -> left = new Node(20);
     root -> right = new Node(30);
     root -> left -> left = new Node(40);
-    inorder(root);
-    preorder(root);
-    postorder(root);
+    root -> inorder(root);
+    root -> preorder(root);
+    root -> postorder(root);
     return 0;
 }
