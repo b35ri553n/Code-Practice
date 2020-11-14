@@ -1,4 +1,0 @@
-1. Balancing parentheses
-2. Evaluating postfix
-3. Implementing 2 stacks in a single array
-4. Find next greater element in an array

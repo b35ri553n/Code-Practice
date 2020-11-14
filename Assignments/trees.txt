@@ -1,5 +1,0 @@
-1. find minimum element in a binary tree
-2. find k-th max element in binary tree
-3. find ancestors of a node
-4. find height of a binary tree
-5. find nodes at level k
