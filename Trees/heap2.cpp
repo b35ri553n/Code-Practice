@@ -23,13 +23,13 @@ class MinHeap {
                 swap(arr[i], arr[parent(i)]);
             }
         }
-        void minHeapify(int i) {
+        void minHeapify(int i) {    //at i, min heap is messed up. below i, everything is min heapified
             int lt = left(i), rt = right(i), smallest = i; //assume root is smallest 
             //check if left child exists and if its smaller than root
             if(lt < size && arr[lt] < arr[i]) 
                 smallest = lt;
             //check if right child exists and if its smaller than root
-            if(rt < size && arr[rt] < arr[i]) 
+            if(rt < size && arr[rt] < arr[smallest]) 
                 smallest = rt;
             if(smallest != i) {    //root wasnt smallest 
                 swap(arr[i], arr[smallest]);
