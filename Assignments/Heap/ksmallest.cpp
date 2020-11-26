@@ -84,8 +84,8 @@ template < typename T >
             cout << endl;
         }
     };
-
-vector<int> findKSmallest(int  arr[], int size, int k){
+//Sorting array and printing k elements takes nlogn time
+vector<int> findKSmallest(int  arr[], int size, int k){     //nlon + nlogk
     vector<int> output;
     // Write your code here
     MinHeap<int> *mheap = new MinHeap<int>();
