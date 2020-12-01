@@ -4,7 +4,6 @@ using namespace std;
 
 bool isSubset(int* arr1, int* arr2, int size1, int size2) {
     unordered_set<int> set1;
-    unordered_set<int> set2;
     for(int i = 0; i < size1; i++)
         set1.insert(arr1[i]);
     for(int i = 0; i < size2; i++)  {
