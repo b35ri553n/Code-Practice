@@ -1,20 +1,31 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int arr[] = {2, 1, 8, 9, 4, 7};
-    int size = 6;
-    bool swapped;       //optimisation
+void bubbleSort(int *arr, int size) {
+    bool swapped = true;       
     for(int i = 0; i < size - 1; i++) {
         swapped = false; 
         for(int j = 0; j <= size - i - 1; j++) {
             if(arr[j] > arr[j + 1]) {
                 swap(arr[j], arr[j + 1]);
-            }
-            if(!swapped)    //if entire is already sorted then within one pass
-                break;      //swapped remains false and we can say entire arr is already sorted
+                swapped = true;
+            }      
         }
+        if(!swapped)    
+            break;
     }
+}
+
+int main() {
+    int size;
+    cout << "Enter size of array: ";
+    cin >> size;
+    int arr[size];
+    cout << "Enter elements: ";
+    for(int i = 0; i < size; i++)
+        cin >> arr[i];
+    cout << "Sorted array is: ";
+    bubbleSort(arr, size);
     for(auto i: arr)
         cout << i << " ";
     return 0;
