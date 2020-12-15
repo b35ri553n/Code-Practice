@@ -20,7 +20,7 @@ void mergeSortedHalves(int *arr, int l, int m, int r) {
 
 void mergeSort(int *arr, int l, int r) {
     if(r > l) {     //we need at least 2 elements in arrays for divide and conquer algo
-        int mid =  (r + l) / 2;  //same as l+r/2 but this prevents overflow for big values for l and r
+        int mid =  l + (r - l) / 2;  //same as l+r/2 but this prevents overflow for big values for l and r
         mergeSort(arr, l, mid);
         mergeSort(arr, mid + 1, r);
         mergeSortedHalves(arr, l, mid, r);
