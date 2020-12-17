@@ -17,13 +17,17 @@ void DFSRec(vector<int> adj[], int s, vector<bool> &visited) {
     }
 }
 
-void DFS(vector<int> adj[], int v) {
+int DFS(vector<int> adj[], int v) {
     vector<bool> visited(v, false);
+    int count = 0;
     for(int i = 0; i < v; i++) {
         if(!visited[i]) {
             DFSRec(adj, i, visited);
+            count++;
         }
     }
+    cout << endl;
+    return count;
 }
 
 int main() {
@@ -34,5 +38,5 @@ int main() {
     addEdge(adj, 1, 2);
     addEdge(adj, 4, 3);
     int s = 0; //s is source of graph
-    DFS(adj, v);
+    cout << DFS(adj, v);
 }
