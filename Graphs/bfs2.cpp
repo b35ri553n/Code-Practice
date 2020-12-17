@@ -31,13 +31,19 @@ void BFS(vector<int> adj[], int s, vector<bool> &visited) {
             }
         }
     }
+    cout << endl;
 }
 
-void BFSDis(vector<int> adj[], int v) {
+int BFSDis(vector<int> adj[], int v) {
     vector<bool> visited(v, false);
+    int count = 0;  //number of disconnected components
     for(int i = 0; i < v; i++) {
-        if(!visited[i]) BFS(adj, i, visited);
+        if(!visited[i]) {
+            BFS(adj, i, visited);
+            count++;
+        }
     }
+    return count;
 }
 
 int main() {
@@ -54,6 +60,6 @@ int main() {
     addEdge(adj, 4, 6);
     addEdge(adj, 5, 6);
     //Source is not given and graph might be disconnected
-    BFSDis(adj, v);
+    cout << BFSDis(adj, v);
     return 0;
 }
