@@ -2,6 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
+// for(int i = 0; i < n; i++) 
 
 int main() {
     ios_base::sync_with_stdio(0);
@@ -12,7 +13,8 @@ int main() {
     cin >> t;
     // cin.ignore();
     while(t--) {
-
+        int n;
+        cin >> n;
     }
 
     return 0;
