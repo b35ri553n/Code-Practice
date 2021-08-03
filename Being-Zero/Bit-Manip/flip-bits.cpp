@@ -30,7 +30,7 @@ int main() {
     while(t--) {
         int a, b;
         cin >> a >> b;
-        cout << bitFlipsRequired(a, b);
+        cout << bitFlipsRequired(a, b) << endl;
     }
 
     return 0;

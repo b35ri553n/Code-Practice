@@ -3,8 +3,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-bool isPowerOf2(int n) {
-    return (n != 0) && (n & (n - 1)) == 0; 
+bool isPowerOf2(long long int n) {
+    return (n != 0) && (n & (n - 1LL)) == 0; 
 }
 
 int main() {
@@ -12,9 +12,12 @@ int main() {
     cin.tie(0);
     cout.tie(0);
     
-    int n;
-    while(cin >> n) 
-        cout << ((isPowerOf2(n)) ? "true" : "false") << endl;
-
+    int t;
+    cin >> t;
+    long long int n;
+    while(t--) {
+        cin >> n;
+        cout << ((isPowerOf2(n)) ? "True" : "False") << endl;
+    }
     return 0;
 }

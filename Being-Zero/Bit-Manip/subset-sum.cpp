@@ -1,4 +1,7 @@
 // Given an array A of size N.  Given sum S, tell if there is any subset of array having given sum S?
+// 1 <= T <= 10
+// 1 <= N <= 10
+// INT_MIN <= A[i] <= INT_MAX
 
 #include<bits/stdc++.h>
 using namespace std;
