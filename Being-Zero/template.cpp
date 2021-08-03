@@ -3,7 +3,9 @@
 using namespace std;
 typedef long long int ll;
 #define M 1000000007
+#define N 1000000
 // for(int i = 0; i < n; i++) 
+ll dp[N + 1];
 
 ll modSum(ll a, ll b) {
     return (a % M + b % M) % M;
@@ -25,6 +27,8 @@ int main() {
     int t, n;
     cin >> t;
     // cin.ignore();
+    // for(int i = 0; i <= N; i++) 
+    //     dp[i] = -1;
     while(t--) {
         cin >> n;
         int arr[n];
