@@ -5,6 +5,125 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Child1",
+            "request": "launch",
+            "mainClass": "Child1",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test3",
+            "request": "launch",
+            "mainClass": "Test3",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch Car",
+            "request": "launch",
+            "mainClass": "Car",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestOverloading",
+            "request": "launch",
+            "mainClass": "TestOverloading",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch Child",
+            "request": "launch",
+            "mainClass": "Child",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinarySearch",
+            "request": "launch",
+            "mainClass": "BinarySearch",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch Producer_Consumer",
+            "request": "launch",
+            "mainClass": "Producer_Consumer",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch FlowControl",
+            "request": "launch",
+            "mainClass": "FlowControl",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch DiffBwStaticInstance",
+            "request": "launch",
+            "mainClass": "DiffBwStaticInstance",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch Difference",
+            "request": "launch",
+            "mainClass": "Difference",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch Switch",
+            "request": "launch",
+            "mainClass": "Switch",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch Echo",
+            "request": "launch",
+            "mainClass": "Echo",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch Scanner",
+            "request": "launch",
+            "mainClass": "Scanner",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch BufferedReader",
+            "request": "launch",
+            "mainClass": "BufferedReader",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch Unboxing",
+            "request": "launch",
+            "mainClass": "Unboxing",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch Autoboxing",
+            "request": "launch",
+            "mainClass": "Autoboxing",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "Code-Practice_dd14a557"
+        },
+        {
             "name": "g++.exe - Build and debug active file",
             "type": "cppdbg",
             "request": "launch",

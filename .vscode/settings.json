@@ -2,6 +2,17 @@
     "files.associations": {
         "iostream": "cpp",
         "ostream": "cpp",
-        "*.tcc": "cpp"
-    }
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "string_view": "cpp",
+        "new": "cpp",
+        "array": "cpp",
+        "cmath": "cpp"
+    },
+    "java.project.sourcePaths": [
+        "JP"
+    ],
+    "C_Cpp.errorSquiggles": "Disabled"
 }
