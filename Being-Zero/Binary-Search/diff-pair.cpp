@@ -4,14 +4,18 @@
 using namespace std;
 typedef long long int ll;
 
-void doesPairExist(int *arr, int n, int k) {
-    int low  = 0, high = n - 1, mid;
-    sort(arr, arr + n);
-    while(low < high) {
-        
+bool isDiffPair(int *a, int n, int k) {
+    sort(a, a + n);
+    for(int i = 0; i < n; i++) {
+        int l = i + 1, h = n - 1;
+        while(l <= h) {
+            int m = l + (h - l) / 2;
+            if(a[m] - a[i] == k) return true;
+            else if(a[m] - a[i] < k) l = m + 1;
+            else h = m - 1;
+        }
     }
-    cout << "False" << endl;
-    return;
+    return false;
 }
 
 int main() {
@@ -19,16 +23,15 @@ int main() {
     cin.tie(0);
     cout.tie(0);
     
-    int t;
+    int t, n, k;
     cin >> t;
-    // cin.ignore();
     while(t--) {
-        int n, k;
         cin >> n >> k;
-        int arr[n];
+        int a[n];
         for(int i = 0; i < n; i++) 
-            cin >> arr[i];
-        doesPairExist(arr, n, k);
+            cin >> a[i];
+        if(isDiffPair(a, n, k)) cout << "true" << "\n";
+        else cout << "false" << "\n";
     }
 
     return 0;
